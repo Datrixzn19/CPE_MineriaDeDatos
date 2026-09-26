@@ -24,11 +24,7 @@ df['self_employed'] = df['self_employed'].fillna(moda_empleo)
 df['work_interfere'] = df['work_interfere'].fillna("Don't know")
 
 
-
-
-#Esto de aca es solo para local para trabajar entre archivos, no va en el cuaderno!
 # index=False evita que Pandas cree una columna extra con los números de fila.
-# (Nota para el cuaderno: Esta línea la puedes ELIMINAR cuando unas todo en un .ipynb)
-df.to_csv("dataset_limpio.csv", index=False)
+df.to_csv("dataset_limpio.csv", index=False)#Esta linea es solo local para trabajar entre archivos, no va en el cuaderno!
 
 print("Limpieza completada y archivo guardado como 'dataset_limpio.csv'")
