@@ -17,7 +17,5 @@ df['interferencia_alta'] = (df['work_interfere_Often'] | df['work_interfere_Some
 
 
 df.to_csv("dataset_listo_modelos.csv", index=False)#Ignorar esta linea en el cuaderno 
-
-
 print("Feature Engineering completado. Nuevas variables agregadas.")
 print("Dimensiones finales para modelado:", df.shape)
