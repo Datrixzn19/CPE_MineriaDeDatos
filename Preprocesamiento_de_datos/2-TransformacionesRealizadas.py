@@ -21,6 +21,8 @@ df[['Age']] = scaler.fit_transform(df[['Age']]) # Doble corchete porque fit_tran
 df_transformado = pd.get_dummies(df, drop_first=True)
 # drop_first=True elimina la primera categoría de cada variable.
 
-#Omitir estas dos lienas en el cuaderno 
-df_transformado.to_csv("dataset_transformado.csv", index=False)
+
+df_transformado.to_csv("dataset_transformado.csv", index=False)#ignorar esta en el cuaderno 
+
+
 print("Transformaciones completadas. Dimensiones actuales:", df_transformado.shape)
