@@ -43,7 +43,7 @@ acc_logistica = accuracy_score(y_test, pred_logistico)
 
 # pd.DataFrame() construye una estructura tabular a partir de un diccionario para visualizar los datos
 tabla_resultados = pd.DataFrame({
-    'Técnica de Mineria': ['Arbol de Decision', 'Regresion Logistica'],
+    'Tecnica de Mineria': ['Arbol de Decision', 'Regresion Logistica'],
     'Parametros': ['criterion="gini", max_depth=5', "solver='liblinear', max_iter=1000"],
     'Precision (Test)': [round(acc_arbol * 100, 2), round(acc_logistica * 100, 2)]
 })
