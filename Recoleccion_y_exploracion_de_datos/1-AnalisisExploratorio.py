@@ -2,7 +2,7 @@
 import pandas as pd
 
 df = pd.read_csv("Mental_Health_in_Tech_Survey.csv") #Llamamos al dataset que esta en nuestro proyecto de manera local 
-pd.set_option('display.float_format', lambda x: '%.2f' % x) # pandas me estaba mostrando las estadisticas en el describe con un formato raro, con esta linea lo solucione(corregir esto al final!!!)
+pd.set_option('display.float_format', lambda x: '%.2f' % x) #Pandas me mostraba los resultados con un formato distinto, lo corregí con esta linea
 
 print("Estadisticas descriptivas basicas")
 print("df.info")#Nos muestra todas las variables, si hay valores nulos, los tipos de datos de cada variable y el tamaño en KB del dataset 
